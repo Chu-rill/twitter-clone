@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/4b12a02105.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="flex justify-between">
+    <!--SIDE BAR-->
+    <section
+      class="fixed top-0 left-0 z-10 w-[200px] bg-white h-screen overflow-scroll"
+    >
+      <div class="px-6 space-y-4">
+        <!-- Twitter logo-->
+        <img src="img/download (1).png" class="w-7 h-7" />
+        <!--Home section-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <div class="pl-3 flex">
+            <i class="fa-solid fa-house w-5 h-5"></i>
+            <p
+              class="flex items-center w-5 h-5 px-5 text-inherit font-extrabold"
+            >
+              Home
+            </p>
+          </div>
+        </div>
+        <!--Explore section-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <a href="explore.html" class="pl-3 flex">
+            <i class="fa-solid fa-magnifying-glass w-5 h-5"></i>
+            <p class="flex items-center w-5 h-5 px-5 text-inherit">Explore</p>
+          </a>
+        </div>
+        <!--Notification section-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <a href="notification.html" class="pl-3 flex">
+            <i class="fa-regular fa-bell w-5 h-5"></i>
+            <p class="flex items-center w-5 h-5 px-5 text-inherit">
+              Notification
+            </p>
+          </a>
+        </div>
+        <!--Message section-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <div class="pl-3 flex">
+            <i class="fa-regular fa-envelope w-5 h-5"></i>
+            <p class="flex items-center w-5 h-5 px-5 text-inherit">Message</p>
+          </div>
+        </div>
+        <!--Bookmarks-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <div class="pl-3 flex">
+            <i class="fa-regular fa-bookmark w-5 h-5"></i>
+            <p class="flex items-center w-5 h-5 px-5 text-inherit">Bookmarks</p>
+          </div>
+        </div>
+        <!--Profile section-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <a href="profile.html" class="pl-3 flex">
+            <i class="fa-regular fa-user w-5 h-5"></i>
+            <p class="flex items-center w-5 h-5 px-5 text-inherit">Profile</p>
+          </a>
+        </div>
+        <!--more section-->
+        <div
+          class="flex hover:cursor-pointer hover:bg-gray-200 h-7 hover:rounded-lg hover:shadow-lg hover:shadow-gray-900 content-center items-center"
+        >
+          <div class="pl-3 flex">
+            <i class="fa-solid fa-ellipsis w-5 h-5"></i>
+            <p class="flex items-center w-5 h-5 px-5 text-inherit">More</p>
+          </div>
+        </div>
+      </div>
+      <!--Tweet button-->
+      <div
+        class="bg-twitter-blue rounded-3xl w-[140px] h-8 mx-3 my-4 hover:cursor-pointer hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-700"
+      >
+        <h1 class="font-bold text-center text-white">Tweet</h1>
+      </div>
+      <!--profile name-->
+      <div class="flex">
+        <img src="img/bond.jpg" class="w-9 h-9 mx-5 rounded-[50%]" />
+        <div class="mx-0">
+          <h1 class="h-4">Çhūrçhîll👨‍💻</h1>
+          <p class="text-gray-500">@chu_rill</p>
+        </div>
+      </div>
+      <p class="mt-[100px]">testing the scroll bar😁</p>
+    </section>
+    <!--MAIN CONTENT-->
+    <main
+      class="feed absolute top-0 left-[203px] z-10 w-[420px] bg-white h-full"
+    >
+      <!--for you info-->
+      <div class="flex bg-inherit h-20 border-2 border-gray-200 sticky top-0">
+        <h1 class="font-bold">Home</h1>
+        <div class="flex pt-[35px] pl-4 space-x-44">
+          <div class="space-x-1 flex">
+            <p>For</p>
+            <p>you</p>
+          </div>
+          <p>Following</p>
+        </div>
+      </div>
+      <!--tweet info-->
+      <div
+        class="bg-inherit pt-3 h-36 flex border-2 border-gray-200 shadow-2xl shadow-black"
+      >
+        <img src="img/bond.jpg" class="w-9 h-9 rounded-[50%]" />
+        <div class="pl-4 w-96">
+          <input
+            placeholder="Whats is happening?!"
+            class="input overflow-hidden bg-inherit border-1 w-[80%]"
+          />
+          <div class="flex mt-14">
+            <div>
+              <i class="fa-regular fa-image w-5 h-5 text-twitter-blue"></i>
+              <i class="fa-regular fa-face-smile w-5 h-5 text-twitter-blue"></i>
+              <i class="fa-solid fa-list w-5 h-5 text-twitter-blue"></i>
+              <i class="fa-regular fa-calendar w-5 h-5 text-twitter-blue"></i>
+              <i class="fa-solid fa-location-dot w-5 h-5 text-twitter-blue"></i>
+            </div>
+            <button
+              class="post w-[60px] bg-twitter-blue rounded-lg text-center opacity-50 hover:shadow-lg hover:shadow-blue-950 text-white font-bold ml-44"
+            >
+              Tweet
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--tweet1-->
+      <div
+        class="min-h-36 pt-3 bg-inherit flex border-2 border-gray-200 shadow-2xl shadow-black"
+      >
+        <img src="img/cole.jpg" class="w-9 h-9 rounded-[50%]" />
+        <div class="pl-4">
+          <!--username-->
+          <div class="flex bg-inherit items-center">
+            <h1 class="font-bold">Micheal Peter🚀</h1>
+            <p class="font-thin text-black text-[10px]">@michealpetes .5h</p>
+            <i class="fa-solid fa-ellipsis w-5 h-5 pl-[100px]"></i>
+          </div>
+          <!--tweet-->
+          <h1 class="text-[12px]">
+            The craziest part about the Titanic sub is after it implodes,
+            everyone inside will just vanish into thin air, due to the immense
+            water pressure,even their skeletons will dissolve immeadiatly, There
+            won't be a trace of them anywhere.
+          </h1>
+          <!--reaction-->
+          <div class="flex justify-evenly py-3">
+            <i class="fa-regular fa-comment w-5 h-5 cursor-pointer"></i>
+            <i class="fa-solid fa-retweet w-5 h-5 retweet cursor-pointer"></i>
+            <i class="fa-regular fa-heart w-5 h-5 heart cursor-pointer"></i>
+            <i class="fa-solid fa-chart-simple w-5 h-5 cursor-pointer"></i>
+            <i
+              class="fa-solid fa-arrow-up-from-bracket w-5 h-5 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--tweet2-->
+      <div
+        class="min-h-36 pt-3 bg-inherit flex border-2 border-gray-200 shadow-2xl shadow-black"
+      >
+        <img src="img/luffy.jpg" class="w-9 h-9 rounded-[50%]" />
+        <div class="pl-4">
+          <!--username-->
+          <div class="flex bg-inherit items-center">
+            <h1 class="font-bold">Pirate King🐵</h1>
+            <p class="font-thin text-black text-[10px]">@piratepeter .2h</p>
+            <i class="fa-solid fa-ellipsis w-5 h-5 pl-[100px]"></i>
+          </div>
+          <!--tweet-->
+          <h1 class="text-[12px]">
+            <p>
+              The New One Piece Live Action Just got announced with some amazing
+              key visuals I have a strong belief that this will be the movie
+              that changes the live Action scene forver
+            </p>
+          </h1>
+          <!--reaction-->
+          <div class="flex justify-evenly py-3">
+            <i class="fa-regular fa-comment w-5 h-5 cursor-pointer"></i>
+            <i class="fa-solid fa-retweet w-5 h-5 retweet cursor-pointer"></i>
+            <i class="fa-regular fa-heart w-5 h-5 heart cursor-pointer"></i>
+            <i class="fa-solid fa-chart-simple w-5 h-5 cursor-pointer"></i>
+            <i
+              class="fa-solid fa-arrow-up-from-bracket w-5 h-5 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!-- another -->
+      <div
+        class="mypost min-h-36 pt-3 bg-inherit flex border-2 border-gray-200 shadow-2xl shadow-black"
+      >
+        <img src="img/bond.jpg" class="w-9 h-9 rounded-[50%]" />
+        <div class="pl-4">
+          <!--username-->
+          <div class="flex bg-inherit items-center">
+            <h1 class="font-bold">Çhūrçhîll👨‍💻</h1>
+            <p class="font-thin text-black text-[10px]">@chu_rill .5h</p>
+            <i class="fa-solid fa-ellipsis w-5 h-5 pl-[100px]"></i>
+          </div>
+          <!--tweet-->
+          <h1 class="text-[12px]">
+            <p class="p">
+              The craziest part about the Titanic sub is after it implodes,
+              everyone inside will just vanish into thin air, due to the immense
+              water pressure,even their skeletons will dissolve immeadiatly,
+              There won't be a trace of them anywhere.
+            </p>
+          </h1>
+          <!--reaction-->
+          <div class="flex justify-evenly py-3">
+            <i class="fa-regular fa-comment w-5 h-5 cursor-pointer"></i>
+            <i class="fa-solid fa-retweet w-5 h-5 retweet cursor-pointer"></i>
+            <i class="fa-regular fa-heart w-5 h-5 heart cursor-pointer"></i>
+            <i class="fa-solid fa-chart-simple w-5 h-5 cursor-pointer"></i>
+            <i
+              class="fa-solid fa-arrow-up-from-bracket w-5 h-5 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--tweet3-->
+      <div
+        class="min-h-36 pt-3 bg-inherit flex border-2 border-gray-200 shadow-2xl shadow-black"
+      >
+        <img src="img/ayano.jpg" class="w-9 h-9 rounded-[50%]" />
+        <div class="pl-4">
+          <!--username-->
+          <div class="flex bg-inherit items-center">
+            <h1 class="font-bold">Heavenly Demon🦩</h1>
+            <p class="font-thin text-black text-[10px]">@Doflamingo .2d</p>
+            <i class="fa-solid fa-ellipsis w-5 h-5 pl-[100px]"></i>
+          </div>
+          <!--tweet-->
+          <h1 class="text-[12px]">
+            <p>
+              All this people comparing the big three on which one is the best
+              all have there strong hold like Bleach has the best character
+              design,Naruto has the best fight scenes and One Piece(the Goat)
+              has the best World building in all of fiction
+            </p>
+          </h1>
+          <!--reaction-->
+          <div class="flex justify-evenly py-3">
+            <i class="fa-regular fa-comment w-5 h-5 hover:cursor-pointer"></i>
+            <i
+              class="fa-solid fa-retweet w-5 h-5 retweet hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-regular fa-heart w-5 h-5 heart hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-solid fa-chart-simple w-5 h-5 hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-solid fa-arrow-up-from-bracket w-5 h-5 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!--tweet4-->
+      <div
+        class="min-h-36 pt-3 bg-inherit flex border-2 border-gray-200 shadow-2xl shadow-black"
+      >
+        <img src="img/elon.jpg" class="w-9 h-9 rounded-[50%]" />
+        <div class="pl-4">
+          <!--username-->
+          <div class="flex bg-inherit items-center">
+            <h1 class="font-bold">Elon Musk(parody)🚀</h1>
+            <p class="font-thin text-black text-[10px]">@Kingofspace .15h</p>
+            <i class="fa-solid fa-ellipsis w-5 h-5 pl-[100px]"></i>
+          </div>
+          <!--tweet-->
+          <h1 class="text-[12px]">
+            <p>How is being transgender not a mental illness?</p>
+          </h1>
+          <!--reaction-->
+          <div class="flex justify-evenly py-3">
+            <i class="fa-regular fa-comment w-5 h-5 hover:cursor-pointer"></i>
+            <i
+              class="fa-solid fa-retweet w-5 h-5 retweet hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-regular fa-heart w-5 h-5 heart hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-solid fa-chart-simple w-5 h-5 hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-solid fa-arrow-up-from-bracket w-5 h-5 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--TREND SECTION-->
+    <sidebar
+      class="absolute left-[620px] top-0 z-10 w-[300px] bg-white h-[800px]"
+    >
+      <div class="space-y-4 pl-[10px] w-[270px]">
+        <!--search icon-->
+        <div
+          class="bg-gray-100 flex rounded-2xl hover:cursor-pointer h-9 sticky top-0"
+        >
+          <div class="flex items-center">
+            <i class="fa-solid fa-magnifying-glass w-5 h-5"></i>
+            <input
+              type="text"
+              class="border-none bg-inherit h-5 hover:cursor-pointer rounded-lg"
+              placeholder="Search Twitter"
+            />
+          </div>
+        </div>
+        <!-- Get verified-->
+        <div class="h-24 font-bold space-y-2 rounded-lg bg-gray-100 border-2">
+          <h1>Get verified</h1>
+          <h4>Subscribe to get new features</h4>
+          <button
+            class="w-[120px] bg-black text-white rounded-lg text-center hover:shadow-lg hover:shadow-black"
+          >
+            Get Verified
+          </button>
+        </div>
+        <!--trends for you-->
+        <div class="bg-gray-100 h-[600px] rounded-lg border-2">
+          <div class="space-y-4 pt-1 pl-1">
+            <h1 class="font-bold">Trends for you</h1>
+            <!--1-->
+            <div>
+              <div class="flex">
+                <p class="text-gray-400 font-bold">Trending</p>
+                <i
+                  class="fa-solid fa-ellipsis w-5 h-5 pl-[150px] text-gray-400"
+                ></i>
+              </div>
+              <h6 class="font-bold">Imploded Submarine</h6>
+              <p class="text-gray-400 font-bold">112k Tweets</p>
+            </div>
+            <!--2-->
+            <div>
+              <div class="flex">
+                <p class="text-gray-400 font-bold">Sports.Trending</p>
+                <i
+                  class="fa-solid fa-ellipsis w-5 h-5 pl-[98px] text-gray-400"
+                ></i>
+              </div>
+              <h6 class="font-bold">Mbappe to Real Madrid</h6>
+              <p class="text-gray-400 font-bold">25.6k Tweets</p>
+            </div>
+            <!--3-->
+            <div>
+              <div class="flex">
+                <p class="text-gray-400 font-bold">Trending in Nigeria</p>
+                <i
+                  class="fa-solid fa-ellipsis w-5 h-5 pl-[75px] text-gray-400"
+                ></i>
+              </div>
+              <h6 class="font-bold">Eleyele</h6>
+              <p class="text-gray-400 font-bold">6,380 Tweets</p>
+            </div>
+            <!--4-->
+            <div>
+              <h3 class="font-bold">#InfnixNote30</h3>
+              <p class="text-gray-400 font-bold">
+                Take charge 24/7 with the note 30
+              </p>
+              <p class="text-gray-400 font-bold">©Promoted by infinixNigeria</p>
+            </div>
+            <!--5-->
+            <div>
+              <div class="flex">
+                <p class="text-gray-400 font-bold">Trending in Nigeria</p>
+                <i
+                  class="fa-solid fa-ellipsis w-5 h-5 pl-[75px] text-gray-400"
+                ></i>
+              </div>
+              <h6 class="font-bold">Africans</h6>
+              <p class="text-gray-400 font-bold">25.1k Tweets</p>
+            </div>
+            <!--6-->
+            <div>
+              <div class="flex">
+                <p class="text-gray-400 font-bold">Technology.Trending</p>
+                <i
+                  class="fa-solid fa-ellipsis w-5 h-5 pl-[75px] text-gray-400"
+                ></i>
+              </div>
+              <h6 class="font-bold">#Figma</h6>
+              <p class="text-gray-400 font-bold">25.6k Tweets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sidebar>
+    <script src="app.js"></script>
+  </body>
+</html>
